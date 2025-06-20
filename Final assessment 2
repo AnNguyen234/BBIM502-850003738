@@ -1,0 +1,746 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "237d01cf-2283-4a66-8a0d-122b6532728a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "--- LANGHAM HOTEL SYSTEM ---\n",
+      "1. Add Room\n",
+      "2. Delete Room\n",
+      "3. Show All Rooms\n",
+      "4. Allocate Room\n",
+      "5. Show Allocated Rooms\n",
+      "6. De-allocate and Bill\n",
+      "7. Save Bookings to File\n",
+      "8. Display File Bookings\n",
+      "9. Backup and Clear File\n",
+      "0. Exit\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Select an option (0-9):  7\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Bookings saved to LHMS_850003738.txt\n",
+      "\n",
+      "--- LANGHAM HOTEL SYSTEM ---\n",
+      "1. Add Room\n",
+      "2. Delete Room\n",
+      "3. Show All Rooms\n",
+      "4. Allocate Room\n",
+      "5. Show Allocated Rooms\n",
+      "6. De-allocate and Bill\n",
+      "7. Save Bookings to File\n",
+      "8. Display File Bookings\n",
+      "9. Backup and Clear File\n",
+      "0. Exit\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Select an option (0-9):  1\n",
+      "Enter Room ID:  123\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Room Types: Deluxe Suite | Executive Room | Standard Room\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter Room Category:  Deluxe Suite\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Added Room 123 - Deluxe Suite\n",
+      "\n",
+      "--- LANGHAM HOTEL SYSTEM ---\n",
+      "1. Add Room\n",
+      "2. Delete Room\n",
+      "3. Show All Rooms\n",
+      "4. Allocate Room\n",
+      "5. Show Allocated Rooms\n",
+      "6. De-allocate and Bill\n",
+      "7. Save Bookings to File\n",
+      "8. Display File Bookings\n",
+      "9. Backup and Clear File\n",
+      "0. Exit\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Select an option (0-9):  4\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Choose Category: 1. Deluxe Suite  2. Executive Room  3. Standard Room\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter choice:  1\n",
+      "Enter customer name:  Anne\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Allocated Room 123 (Deluxe Suite) to Anne\n",
+      "\n",
+      "--- LANGHAM HOTEL SYSTEM ---\n",
+      "1. Add Room\n",
+      "2. Delete Room\n",
+      "3. Show All Rooms\n",
+      "4. Allocate Room\n",
+      "5. Show Allocated Rooms\n",
+      "6. De-allocate and Bill\n",
+      "7. Save Bookings to File\n",
+      "8. Display File Bookings\n",
+      "9. Backup and Clear File\n",
+      "0. Exit\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Select an option (0-9):  5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Current Bookings:\n",
+      "123 - Deluxe Suite | Anne | 2025-06-20 19:25:35\n",
+      "\n",
+      "--- LANGHAM HOTEL SYSTEM ---\n",
+      "1. Add Room\n",
+      "2. Delete Room\n",
+      "3. Show All Rooms\n",
+      "4. Allocate Room\n",
+      "5. Show Allocated Rooms\n",
+      "6. De-allocate and Bill\n",
+      "7. Save Bookings to File\n",
+      "8. Display File Bookings\n",
+      "9. Backup and Clear File\n",
+      "0. Exit\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Select an option (0-9):  7\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Bookings saved to LHMS_850003738.txt\n",
+      "\n",
+      "--- LANGHAM HOTEL SYSTEM ---\n",
+      "1. Add Room\n",
+      "2. Delete Room\n",
+      "3. Show All Rooms\n",
+      "4. Allocate Room\n",
+      "5. Show Allocated Rooms\n",
+      "6. De-allocate and Bill\n",
+      "7. Save Bookings to File\n",
+      "8. Display File Bookings\n",
+      "9. Backup and Clear File\n",
+      "0. Exit\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Select an option (0-9):  8\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Bookings from LHMS_850003738.txt:\n",
+      "123,Anne,2025-06-20T19:25:35.906587\n",
+      "\n",
+      "--- LANGHAM HOTEL SYSTEM ---\n",
+      "1. Add Room\n",
+      "2. Delete Room\n",
+      "3. Show All Rooms\n",
+      "4. Allocate Room\n",
+      "5. Show Allocated Rooms\n",
+      "6. De-allocate and Bill\n",
+      "7. Save Bookings to File\n",
+      "8. Display File Bookings\n",
+      "9. Backup and Clear File\n",
+      "0. Exit\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Select an option (0-9):  9\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Backup saved to LHMS_850003738_Backup_20250620_192921.txt. Original file cleared.\n",
+      "\n",
+      "--- LANGHAM HOTEL SYSTEM ---\n",
+      "1. Add Room\n",
+      "2. Delete Room\n",
+      "3. Show All Rooms\n",
+      "4. Allocate Room\n",
+      "5. Show Allocated Rooms\n",
+      "6. De-allocate and Bill\n",
+      "7. Save Bookings to File\n",
+      "8. Display File Bookings\n",
+      "9. Backup and Clear File\n",
+      "0. Exit\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Assessment 2\n",
+    "#NguyenHoangThienAn\n",
+    "# Student ID: 850003738\n",
+    "import datetime\n",
+    "import os\n",
+    "\n",
+    "STUDENT_ID = \"850003738\"\n",
+    "FILENAME = f\"LHMS_{STUDENT_ID}.txt\"\n",
+    "# Room class to store room's information\n",
+    "class Room:\n",
+    "    def __init__(self, room_id, category):\n",
+    "        self.room_id = room_id\n",
+    "        self.category = category\n",
+    "# HotelSystem class to manage rooms and bookings:\n",
+    "class HotelSystem:\n",
+    "    PRICE_MAP = {\n",
+    "        \"Deluxe Suite\": 150,\n",
+    "        \"Executive Room\": 120,\n",
+    "        \"Standard Room\": 90\n",
+    "    }\n",
+    "\n",
+    "    def __init__(self):\n",
+    "        self.rooms = {}          # {room_id: Room object} #stores all rooms\n",
+    "        self.bookings = {}       # {room_id: (customer_name, datetime)} #stores current bookings\n",
+    "# Menu option 1: Add a room      \n",
+    "    def add_room(self, room_id, category):  #This function allows the user to add a new room to the hotel system\n",
+    "        if room_id in self.rooms:   # Check if the room exists\n",
+    "            print(\"Room already exists.\")\n",
+    "        elif category not in self.PRICE_MAP:# Check if the room category is valid\n",
+    "            print(\"Invalid category.\")\n",
+    "        else:\n",
+    "            self.rooms[room_id] = Room(room_id, category) # if valid, create a new room\n",
+    "            print(f\"Added Room {room_id} - {category}\")\n",
+    "# Menu option 2: Delete a room\n",
+    "    def delete_room(self, room_id):     #This function allows the user to delete a room from the system\n",
+    "        if room_id not in self.rooms:   # Check if the room exists\n",
+    "            print(\"Room does not exist.\")\n",
+    "        elif room_id in self.bookings:   # If the room is currently booked, we cannot delete it\n",
+    "            print(\"Room is currently booked. Cannot delete.\")\n",
+    "        else:    # If the room is not booked, the user can delete it\n",
+    "            del self.rooms[room_id]      \n",
+    "            print(f\"Deleted Room {room_id}\")\n",
+    "# Menu option 3: Show all available rooms\n",
+    "    def show_rooms(self):\n",
+    "        if not self.rooms:   # If there are no room, show this message\n",
+    "            print(\"No rooms available.\")\n",
+    "        else:\n",
+    "            print(\"Available Rooms:\")\n",
+    "            for room in self.rooms.values():\n",
+    "                print(f\"Room ID: {room.room_id}, Type: {room.category}, Rate: ${self.PRICE_MAP[room.category]}\")\n",
+    "# Menu option 4: Book a room for a customer\n",
+    "    def allocate_room(self, category, customer_name):   # Look for an available room that matches the selected category\n",
+    "        for room_id, room in self.rooms.items():\n",
+    "            if room.category == category and room_id not in self.bookings:           # If room type matches and is not booked, book it\n",
+    "                self.bookings[room_id] = (customer_name, datetime.datetime.now())\n",
+    "                print(f\"Allocated Room {room_id} ({category}) to {customer_name}\")\n",
+    "                return\n",
+    "        print(f\"No available {category} rooms.\")  # If no room is found, show this message\n",
+    "# Menu option 5: Show current room allocation status\n",
+    "    def show_bookings(self):\n",
+    "        if not self.bookings:\n",
+    "            print(\"No current bookings.\") # If no bookings, show this message\n",
+    "        else:\n",
+    "            print(\"Current Bookings:\")\n",
+    "            for room_id, (customer, dt) in self.bookings.items():\n",
+    "                category = self.rooms[room_id].category\n",
+    "                print(f\"{room_id} - {category} | {customer} | {dt.strftime('%Y-%m-%d %H:%M:%S')}\")\n",
+    "# Menu option 6: Deallocate a room and calculate the bill\n",
+    "    def deallocate_room(self, room_id, days):\n",
+    "        if room_id not in self.bookings:       # Check if the room is booked\n",
+    "            print(\"Room not booked.\")\n",
+    "            return\n",
+    "       # Remove booking and calculate bill\n",
+    "        customer, _ = self.bookings.pop(room_id)\n",
+    "        category = self.rooms[room_id].category\n",
+    "        rate = self.PRICE_MAP[category]\n",
+    "        total = days * rate\n",
+    "        print(f\"{customer} checked out from Room {room_id} ({category}). Total bill for {days} days: ${total}\")\n",
+    "# Menu option 7: Save bookings to a file\n",
+    "    def save_bookings_to_file(self): # Open the file in append mode\n",
+    "        with open(FILENAME, \"a\") as file:\n",
+    "            for room_id, (customer, dt) in self.bookings.items():\n",
+    "                file.write(f\"{room_id},{customer},{dt.isoformat()}\\n\")\n",
+    "        print(f\"Bookings saved to {FILENAME}\")\n",
+    "# Menu option 8: Display bookings from the file\n",
+    "    def display_file_bookings(self):\n",
+    "        if not os.path.exists(FILENAME):   # If file does not exist, show this message\n",
+    "            print(\"No saved file found.\")\n",
+    "            return\n",
+    "        print(f\"Bookings from {FILENAME}:\")\n",
+    "        with open(FILENAME, \"r\") as file:\n",
+    "            for line in file:\n",
+    "                print(line.strip())\n",
+    "# Menu option 9: Backup the file and clear the original\n",
+    "    def backup_and_clear_file(self):    # If file does not exist, show this message\n",
+    "        if not os.path.exists(FILENAME):\n",
+    "            print(\"No file to backup.\")\n",
+    "            return\n",
+    "        timestamp = datetime.datetime.now().strftime(\"%Y%m%d_%H%M%S\")\n",
+    "        backup_file = f\"LHMS_{STUDENT_ID}_Backup_{timestamp}.txt\"\n",
+    "        with open(FILENAME, \"r\") as original, open(backup_file, \"w\") as backup:\n",
+    "            backup.writelines(original.readlines())\n",
+    "        open(FILENAME, \"w\").close()\n",
+    "        print(f\"Backup saved to {backup_file}. Original file cleared.\")\n",
+    "        \n",
+    "# Menu function: Show all options and run the selected one\n",
+    "\n",
+    "def run_menu():\n",
+    "    system = HotelSystem()\n",
+    "\n",
+    "    while True:\n",
+    "        print(\"\\n--- LANGHAM HOTEL SYSTEM ---\")\n",
+    "        print(\"1. Add Room\")\n",
+    "        print(\"2. Delete Room\")\n",
+    "        print(\"3. Show All Rooms\")\n",
+    "        print(\"4. Allocate Room\")\n",
+    "        print(\"5. Show Allocated Rooms\")\n",
+    "        print(\"6. De-allocate and Bill\")\n",
+    "        print(\"7. Save Bookings to File\")\n",
+    "        print(\"8. Display File Bookings\")\n",
+    "        print(\"9. Backup and Clear File\")\n",
+    "        print(\"0. Exit\")\n",
+    "        choice = input(\"Select an option (0-9): \")\n",
+    "\n",
+    "        if choice == \"1\":\n",
+    "            room_id = input(\"Enter Room ID: \")\n",
+    "            print(\"Room Types: Deluxe Suite | Executive Room | Standard Room\")\n",
+    "            category = input(\"Enter Room Category: \")\n",
+    "            system.add_room(room_id, category)\n",
+    "\n",
+    "        elif choice == \"2\":\n",
+    "            room_id = input(\"Enter Room ID to delete: \")\n",
+    "            system.delete_room(room_id)\n",
+    "\n",
+    "        elif choice == \"3\":\n",
+    "            system.show_rooms()\n",
+    "\n",
+    "        elif choice == \"4\":\n",
+    "            print(\"Choose Category: 1. Deluxe Suite  2. Executive Room  3. Standard Room\")\n",
+    "            category_map = {\"1\": \"Deluxe Suite\", \"2\": \"Executive Room\", \"3\": \"Standard Room\"}\n",
+    "            category_choice = input(\"Enter choice: \")\n",
+    "            category = category_map.get(category_choice)\n",
+    "            if category:\n",
+    "                customer = input(\"Enter customer name: \")\n",
+    "                system.allocate_room(category, customer)\n",
+    "            else:\n",
+    "                print(\"Invalid category choice.\")\n",
+    "\n",
+    "        elif choice == \"5\":\n",
+    "            system.show_bookings()\n",
+    "\n",
+    "        elif choice == \"6\":\n",
+    "            room_id = input(\"Enter Room ID to checkout: \")\n",
+    "            if room_id in system.bookings:\n",
+    "                try:\n",
+    "                    days = int(input(\"Enter number of days: \"))\n",
+    "                    if days > 0:\n",
+    "                        system.deallocate_room(room_id, days)\n",
+    "                    else:\n",
+    "                        print(\"Number of days must be positive.\")\n",
+    "                except ValueError:\n",
+    "                    print(\"Invalid input for days.\")\n",
+    "            else:\n",
+    "                print(\"Room is not allocated.\")\n",
+    "\n",
+    "        elif choice == \"7\":\n",
+    "            system.save_bookings_to_file()\n",
+    "\n",
+    "        elif choice == \"8\":\n",
+    "            system.display_file_bookings()\n",
+    "\n",
+    "        elif choice == \"9\":\n",
+    "            system.backup_and_clear_file()\n",
+    "\n",
+    "        elif choice == \"0\":\n",
+    "            print(\"Thank you for using the system. Goodbye!\")\n",
+    "            break\n",
+    "\n",
+    "        else:\n",
+    "            print(\"Invalid option. Try again.\")\n",
+    "# Start the menu when running the program\n",
+    "run_menu()\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b16f5fd6-ca79-468b-9e87-ee75d65bfbd5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Error 1- Duplicate room id - Logical error:\n",
+    "def add_room(self, room_id, category):\n",
+    "    self.rooms[room_id] = Room(room_id, category)\n",
+    "    print(f\"Added Room {room_id} - {category}\")\n",
+    "# How to fix it:\n",
+    "def add_room(self, room_id, category):\n",
+    "    if room_id in self.rooms:\n",
+    "        print(\"Room already exists.\")\n",
+    "    elif category not in self.PRICE_MAP:\n",
+    "        print(\"Invalid category.\")\n",
+    "    else:\n",
+    "        self.rooms[room_id] = Room(room_id, category)\n",
+    "        print(f\"Added Room {room_id} - {category}\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3411ea9e-c185-48ed-8471-76051a1da73d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Error 2- Invalid Room Category - Input Validation Error\n",
+    "def add_room(self, room_id, category):\n",
+    "    self.rooms[room_id] = Room(room_id, category)\n",
+    "# How to fix it:\n",
+    "elif category not in self.PRICE_MAP:\n",
+    "    print(\"Invalid category.\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a80d742e-d8a2-44b3-b258-95648c9a7646",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Error 3 - Cannot Delete a Booked Room -  Logical Error\n",
+    "def delete_room(self, room_id):\n",
+    "    if room_id not in self.rooms:\n",
+    "        print(\"Room does not exist.\")\n",
+    "    else:\n",
+    "        del self.rooms[room_id]\n",
+    "        print(f\"Deleted Room {room_id}\")\n",
+    "# How to fix it:\n",
+    " def delete_room(self, room_id):    \n",
+    "        if room_id not in self.rooms:   \n",
+    "            print(\"Room does not exist.\")\n",
+    "        elif room_id in self.bookings:   \n",
+    "            print(\"Room is currently booked. Cannot delete.\")\n",
+    "        else:    \n",
+    "            del self.rooms[room_id]      \n",
+    "            print(f\"Deleted Room {room_id}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7a6124c2-392e-4ea3-81b0-2bd239604b89",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Error 4 – Invalid Input for Number of Days - Runtime Error\n",
+    "days = int(input(\"Enter number of days: \"))\n",
+    "system.deallocate_room(room_id, days)\n",
+    "# How to fix it:\n",
+    "try:\n",
+    "    days = int(input(\"Enter number of days: \"))\n",
+    "    if days > 0:\n",
+    "        system.deallocate_room(room_id, days)\n",
+    "    else:\n",
+    "        print(\"Number of days must be positive.\")\n",
+    "except ValueError:\n",
+    "    print(\"Invalid input for days.\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7de9fc7b-51f3-44e0-b572-0231ebfb40da",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Error 5 – File Not Found - Runtime Error\n",
+    "with open(FILENAME, \"r\") as file:\n",
+    "    for line in file:\n",
+    "        print(line.strip())\n",
+    "# How to fix it:\n",
+    "if not os.path.exists(FILENAME):\n",
+    "    print(\"No saved file found.\")\n",
+    "    return\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f83e0aff-bed7-4ce5-aa1c-dbef57dec6ba",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Error 6 – Overwriting Backup File - Logical Error\n",
+    "backup_file = \"LHMS_Backup.txt\"\n",
+    "with open(FILENAME, \"r\") as original, open(backup_file, \"w\") as backup:\n",
+    "    backup.writelines(original.readlines())\n",
+    "# How to fix it:\n",
+    "timestamp = datetime.datetime.now().strftime(\"%Y%m%d_%H%M%S\")\n",
+    "backup_file = f\"LHMS_{STUDENT_ID}_Backup_{timestamp}.txt\"\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6c3d0146-3b5f-49fa-b577-22c39f420774",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# ValueError\n",
+    "days = int(input(\"Enter number of days: \"))\n",
+    "# Fix\n",
+    "try:\n",
+    "    days = int(input(\"Enter number of days: \"))\n",
+    "    if days > 0:\n",
+    "        system.deallocate_room(room_id, days)\n",
+    "    else:\n",
+    "        print(\"Number of days must be positive.\")\n",
+    "except ValueError:\n",
+    "    print(\"Invalid input for days.\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f5685ed2-abf2-4d2d-8146-1a92df99d577",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# FileNotFoundError\n",
+    "with open(FILENAME, \"r\") as file:\n",
+    "    print(file.read())\n",
+    "# Fix\n",
+    "if not os.path.exists(FILENAME):\n",
+    "    print(\"No saved file found.\")\n",
+    "    return\n",
+    "with open(FILENAME, \"r\") as file:\n",
+    "    for line in file:\n",
+    "        print(line.strip())\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ca53b87d-2431-4c91-a602-2ff402a9ca41",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# TypeError\n",
+    "print(\"Total bill: \" + 300)\n",
+    "# Fix\n",
+    "print(f\"Total bill for {days} days: ${total}\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cc09b2eb-4696-4a55-b7ff-28d673c899fd",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# EOFError\n",
+    "customer_name = input(\"Enter customer name: \")\n",
+    "# Fix\n",
+    "try:\n",
+    "    customer_name = input(\"Enter customer name: \")\n",
+    "except EOFError:\n",
+    "    print(\"No input received.\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "388bfbcb-b509-406e-9e69-e0c457866afe",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# ZeroDivisionError\n",
+    "occupancy_rate = booked_rooms / total_rooms\n",
+    "# Fix\n",
+    "try:\n",
+    "    occupancy_rate = booked_rooms / total_rooms\n",
+    "except ZeroDivisionError:\n",
+    "    print(\"Total rooms cannot be zero.\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "14d597dd-18af-4389-bf00-e1690078b541",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# OverflowError\n",
+    "import math\n",
+    "cost = math.exp(1000)\n",
+    "# Fix\n",
+    "import math\n",
+    "try:\n",
+    "    cost = math.exp(1000)\n",
+    "except OverflowError:\n",
+    "    print(\"Cost too large to calculate.\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9348715b-ca50-4db1-9eb3-d03cfc21b3d4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# SyntaxError\n",
+    "print(\"Hello\"  # missing bracket\n",
+    "# Fix\n",
+    "print(\"Hello\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d665689f-6bfb-4b90-a056-603b1ebf3a49",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# NameError\n",
+    "print(roomID)\n",
+    "# Fix\n",
+    "print(room_id)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "daa96bab-c74f-4487-ab83-43d30a730ae9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# ImportError\n",
+    "import datetim  # typo\n",
+    "# Fix\n",
+    "import datetime"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "06dcfd6b-3cd8-48c6-bb22-361751dae9f8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# IndexError\n",
+    "rooms = list(self.rooms.keys())\n",
+    "print(rooms[10])\n",
+    "# Fix\n",
+    "try:\n",
+    "    print(rooms[10])\n",
+    "except IndexError:\n",
+    "    print(\"Room index is out of range.\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "54e44042-63e1-48c3-907f-c65a2cf2553b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# IOError\n",
+    "with open(\"file.txt\", \"r\") as f:\n",
+    "    content = f.read()\n",
+    "# Fix\n",
+    "if not os.path.exists(\"file.txt\"):\n",
+    "    print(\"File not found.\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5db13432-acb9-4fb9-9d9c-bfb9ee65f50b",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
